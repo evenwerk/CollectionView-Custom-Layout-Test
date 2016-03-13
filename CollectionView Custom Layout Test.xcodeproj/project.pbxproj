@@ -12,6 +12,7 @@
 		4DC0422E1C8AE26100109B0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DC0422C1C8AE26100109B0B /* Main.storyboard */; };
 		4DC042301C8AE26100109B0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DC0422F1C8AE26100109B0B /* Assets.xcassets */; };
 		4DC042331C8AE26100109B0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DC042311C8AE26100109B0B /* LaunchScreen.storyboard */; };
+		4DC0423B1C8AE59700109B0B /* AlbumsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC0423A1C8AE59700109B0B /* AlbumsLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4DC0422F1C8AE26100109B0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DC042321C8AE26100109B0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DC042341C8AE26100109B0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DC0423A1C8AE59700109B0B /* AlbumsLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				4DC042281C8AE26100109B0B /* AppDelegate.swift */,
 				4DC0422A1C8AE26100109B0B /* ViewController.swift */,
+				4DC0423A1C8AE59700109B0B /* AlbumsLayout.swift */,
 				4DC0422C1C8AE26100109B0B /* Main.storyboard */,
 				4DC0422F1C8AE26100109B0B /* Assets.xcassets */,
 				4DC042311C8AE26100109B0B /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DC0422B1C8AE26100109B0B /* ViewController.swift in Sources */,
+				4DC0423B1C8AE59700109B0B /* AlbumsLayout.swift in Sources */,
 				4DC042291C8AE26100109B0B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +255,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.evenwerk.CollectionView-Custom-Layout-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -262,6 +267,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.evenwerk.CollectionView-Custom-Layout-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

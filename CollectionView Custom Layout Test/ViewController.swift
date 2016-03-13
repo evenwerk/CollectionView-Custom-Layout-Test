@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,3 +23,31 @@ class ViewController: UIViewController {
 
 }
 
+extension CollectionViewController {
+    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 53
+    }
+    
+    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 3
+    }
+    
+    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = self.collectionView?.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath)
+        
+        if indexPath.section % 2 == 0 {
+            cell!.backgroundColor = UIColor.blackColor()
+        }
+        else {
+            cell!.backgroundColor = UIColor.lightGrayColor()
+        }
+        
+        return cell!
+    }
+}
+
+extension CollectionViewController {
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        print(indexPath)
+    }
+}
